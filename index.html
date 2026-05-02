@@ -611,9 +611,8 @@ async function runAnalysis() {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    model: 'claude-sonnet-4-6',
+    model: 'gpt-5-mini',
     max_tokens: 4000,
-    temperature: 0,
     system: 'Είσαι ειδικός τελωνειακής αποτίμησης extras αυτοκινήτων. Απαντάς ΠΑΝΤΑ και ΜΟΝΟ με έγκυρο JSON. Ποτέ κείμενο, εξηγήσεις ή σχόλια εκτός JSON. Είσαι πολύ προσεκτικός με τα packages και δεν μετράς ποτέ διπλά.',
     messages: [{ role: 'user', content }]
   })
