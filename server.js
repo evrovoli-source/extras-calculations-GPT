@@ -55,7 +55,6 @@ app.post('/api/analyze', async (req, res) => {
       },
       body: JSON.stringify({
         model: 'gpt-5-mini',
-        temperature: 0,
         input: [
           {
             role: 'user',
